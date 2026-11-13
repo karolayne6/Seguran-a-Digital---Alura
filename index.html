@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senha Segura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header>
+            <div class="icone">🔐</div>
+            <h1>Senha Segura</h1>
+            <p>Descubra como melhorar a segurança das suas senhas.</p>
+        </header>
+
+        <section class="painel">
+
+            <h2>Verifique sua senha</h2>
+
+            <label for="senha">Digite uma senha fictícia:</label>
+
+            <div class="campo">
+                <input
+                    type="password"
+                    id="senha"
+                    placeholder="Digite uma senha de teste"
+                    autocomplete="off"
+                >
+
+                <button id="mostrar" type="button">
+                    Mostrar
+                </button>
+            </div>
+
+            <div class="forca">
+                <div id="barra"></div>
+            </div>
+
+            <p id="resultado">Aguardando análise...</p>
+
+            <h3>Requisitos de segurança</h3>
+
+            <ul>
+                <li id="tamanho">❌ Pelo menos 12 caracteres</li>
+                <li id="maiuscula">❌ Letras maiúsculas</li>
+                <li id="minuscula">❌ Letras minúsculas</li>
+                <li id="numero">❌ Números</li>
+                <li id="simbolo">❌ Símbolos</li>
+            </ul>
+
+            <div class="estatisticas">
+                <h3>Análise matemática</h3>
+                <p>Quantidade de caracteres:
+                    <strong id="quantidade">0</strong>
+                </p>
+
+                <p>Alfabeto estimado:
+                    <strong id="alfabeto">0</strong>
+                </p>
+
+                <p>Entropia estimada:
+                    <strong id="entropia">0 bits</strong>
+                </p>
+            </div>
+
+            <div class="dica">
+                <h3>💡 Recomendação</h3>
+                <p id="dica">
+                    Digite uma senha fictícia para receber orientações.
+                </p>
+            </div>
+
+            <button id="limpar" class="limpar" type="button">
+                Limpar análise
+            </button>
+
+        </section>
+
+        <footer>
+            <p>Projeto educacional de segurança digital.</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
