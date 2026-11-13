@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #101b35, #263d69);
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 30px 15px;
+}
+
+.container {
+    width: 100%;
+    max-width: 550px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.icone {
+    font-size: 55px;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+header p {
+    color: #c6d3e8;
+}
+
+.painel {
+    background: #ffffff;
+    color: #18243b;
+    padding: 28px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.campo {
+    display: flex;
+    gap: 8px;
+}
+
+input {
+    width: 100%;
+    min-width: 0;
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    background: #3159a5;
+    color: white;
+}
+
+.forca {
+    height: 10px;
+    background: #e5e7eb;
+    border-radius: 10px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+#barra {
+    height: 100%;
+    width: 0%;
+    background: #e74c3c;
+    transition: 0.3s;
+}
+
+#resultado {
+    margin: 12px 0 22px;
+    font-weight: bold;
+}
+
+h3 {
+    margin: 20px 0 12px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 14px;
+}
+
+.estatisticas {
+    background: #f0f4fa;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.estatisticas p {
+    margin: 9px 0;
+    font-size: 14px;
+}
+
+.dica {
+    background: #eaf2ff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 18px;
+}
+
+.dica p {
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.limpar {
+    background: #e34d4d;
+    width: 100%;
+    margin-top: 22px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 25px;
+    color: #c6d3e8;
+    font-size: 13px;
+}
+
+@media (max-width: 480px) {
+    .painel {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .campo {
+        flex-wrap: wrap;
+    }
+
+    .campo button {
+        width: 100%;
+    }
+}
